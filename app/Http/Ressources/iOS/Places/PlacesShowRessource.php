@@ -14,8 +14,8 @@ class PlacesShowRessource extends Resource
 {
     public function toArray($request)
     {
-        $articles = Post::where('place_id', '=', $this->id)->get();
-        $events = Event::where('place_id', '=', $this->id)->get();
+        $articles = Post::where('place_id', '=', $this->id)->isPublished()->get();
+        $events = Event::where('place_id', '=', $this->id)->isPublished()->get();
 
         return [
 

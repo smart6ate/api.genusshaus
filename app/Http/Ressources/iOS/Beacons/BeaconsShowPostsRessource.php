@@ -20,7 +20,7 @@ class BeaconsShowPostsRessource extends Resource
     {
         $place = $this->place;
         $beacons = $place->beacons;
-        $posts = Post::where('place_id', '=', $place->id)->get();
+        $posts = Post::where('place_id', '=', $place->id)->isPublished()->get();
 
         return [
             'place_uuid' => $this->place->uuid,

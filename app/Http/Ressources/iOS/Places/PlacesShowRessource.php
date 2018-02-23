@@ -2,8 +2,12 @@
 
 namespace Genusshaus\Http\Resources\iOS\Places;
 
-use Genusshaus\Domain\Ressources\Models\Event;
-use Genusshaus\Domain\Ressources\Models\Post;
+use Genusshaus\Domain\Places\Models\Event;
+use Genusshaus\Domain\Places\Models\Post;
+use Genusshaus\Http\Resources\iOS\Events\EventsShowRessource;
+use Genusshaus\Http\Resources\iOS\OpeningHours\OpeningHoursIndexRessource;
+use Genusshaus\Http\Resources\iOS\Posts\PostsIndexRessource;
+use Genusshaus\Http\Resources\iOS\Tags\TagsIndexRessource;
 use Illuminate\Http\Resources\Json\Resource;
 
 class PlacesShowRessource extends Resource

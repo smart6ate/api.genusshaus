@@ -2,6 +2,7 @@
 
 namespace Genusshaus\Http\Resources\iOS\Events;
 
+use Genusshaus\Http\Resources\iOS\Tags\TagsIndexRessource;
 use Illuminate\Http\Resources\Json\Resource;
 
 class EventsShowRessource extends Resource

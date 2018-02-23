@@ -20,7 +20,7 @@ class PostsIndexRessource extends Resource
             'title'                  => $this->title,
             'teaser'                 => $this->teaser,
             'image'                  => $this->getPreviewImage(),
-            'image_uuid' => $this->getPreviewImageUuid(),
+            'image_uuid'             => $this->getPreviewImageUuid(),
             'author'                 => $this->author,
             'source'                 => $this->src,
             'created_at'             => optional($this->created_at)->timestamp,

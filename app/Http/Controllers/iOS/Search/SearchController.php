@@ -12,9 +12,12 @@ class SearchController extends Controller
 {
     public function search(SearchPlacesRequest $request)
     {
-        $places = Place::withAllTags($request->tags)
+       /* $places = Place::withAllTags($request->tags)
             ->orderBy('name', 'asc')
-            ->get();
+            ->get();*/
+
+
+        $places = Place::take(2)->get();
 
         if ($places->count()) {
 

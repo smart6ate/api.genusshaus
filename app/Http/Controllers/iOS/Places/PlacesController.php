@@ -34,7 +34,7 @@ class PlacesController extends Controller
     {
         $place = Place::where('uuid', '=', $request->uuid)->first();
 
-       return new PlacesShowRessource($place);
+        return new PlacesShowRessource($place);
 
     }
 }

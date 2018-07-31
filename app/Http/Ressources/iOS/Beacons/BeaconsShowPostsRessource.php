@@ -32,7 +32,6 @@ class BeaconsShowPostsRessource extends Resource
 
             'articles' => PostsIndexRessource::collection($posts),
             'beacons'  => BeaconsIndexRessource::collection($beacons),
-
         ];
     }
 }

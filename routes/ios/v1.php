@@ -2,6 +2,7 @@
 
 Route::group(['prefix' => '/v1', 'namespace' => 'iOS'], function () {
 
+
     Route::get('/devices', 'Devices\DevicesController@index');
     Route::get('/device/register', 'Devices\DevicesController@register');
 
@@ -11,6 +12,8 @@ Route::group(['prefix' => '/v1', 'namespace' => 'iOS'], function () {
 
     Route::get('/beacon', 'Beacons\BeaconsController@index');
     Route::post('/beacon', 'Beacons\BeaconsController@show');
+    // Ylber Veliu - Vizah GmbH
+    Route::post('/notification', 'Beacons\BeaconsController@notification');
 
     Route::post('/search', 'Search\SearchController@search');
     Route::post('/search/phrase', 'Search\SearchController@log');
